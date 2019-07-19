@@ -32,6 +32,9 @@
 |成员|GitHub|博客|
 |:---:|---|---|
 |胡佳露|[胡佳露的GitHub](https://github.com/jialuhu)|[胡佳露的博客](https://github.com/jialuhu)|
+|索刘敏|[索刘敏的GitHub](https://blog.csdn.net/weixin_43858843)|[索刘敏的博客](https://github.com/materyy)|
+|杨思语|[杨思语的GitHub](https://github.com/cosineta)|[杨思语的博客](https://blog.csdn.net/yangyanxi1216)|
+|赖鑫|[赖鑫的GitHub](https://github.com/shengshengxiaowang)|[赖鑫的博客](https://blog.csdn.net/shengshengxiaowang)|
 
 
 # 三、要求
