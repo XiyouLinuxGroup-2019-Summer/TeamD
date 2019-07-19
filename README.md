@@ -1,9 +1,11 @@
 # 一、仓库说明
 
 ## 1、目录说明
-
+### 18级目录说明
 - TemaD下目录有Nember、Share、Requirement、Problem.使用说明规则和说明请参考表格一。
 - 个人目录需要创建在Number下，在个人目录下又需要建立ACM、Linux_code、Plan、Summary、Tiny_Project五个目录，建立规则请参考表格二。
+### 17级目录说明
+- 在TeamD下的17_SummerPlan中创建自己暑假计划markdown文件，在文件中写明假期计划，并且在最后附加上自己该暑假留校学习的代码仓库链接。计划文件的文明名格式为:姓名_SummerPlan
 
 
 ## 2、参考表格
