@@ -1,0 +1,1 @@
+总结每周的学习生活，每周天之前将该周的总结以markdown的形式上传到该目录下。文件命名要求为week1_summary、week2_summary，以此类推
