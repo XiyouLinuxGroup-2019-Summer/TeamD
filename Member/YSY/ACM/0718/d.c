@@ -13,7 +13,7 @@ int main()
 	{
 		//scanf("%[^\n]",b);
 		gets(b);
-		if(!(strcmp(b,"START")))	
+		if(!(strcat(b,"START")))	
 		{	m=1;continue;
 		}
 		else if(!(strcmp(b,"END")))	
