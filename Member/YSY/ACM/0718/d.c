@@ -13,13 +13,15 @@ int main()
 	{
 		//scanf("%[^\n]",b);
 		gets(b);
-		if(!(strcat(b,"START")))	
+		
+		if(!(strcmp(b,"START")))	
 		{	m=1;continue;
 		}
 		else if(!(strcmp(b,"END")))	
 			m=0;
 		if(m)
-		{n++;strcpy(a[n],b);
+		
+		{n++;strcat(a[n],b);
 		}
 		if(!(strcmp(b,"ENDOFINPUT")))	
 			break;	
