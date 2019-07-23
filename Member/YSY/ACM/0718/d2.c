@@ -13,25 +13,14 @@ int main()
 	{
 		//scanf("%[^\n]",b);
 		gets(b);
-		if(!(strcat(b,"START")))	
+		if(!(strcmp(b,"START")))	
 		{	m=1;continue;
 		}
 		else if(!(strcmp(b,"END")))	
-			m=0;
-		if(m)
-		{n++;strcpy(a[n],b);
-		}
-		if(!(strcmp(b,"ENDOFINPUT")))	
-			break;	
-		
-	}
-
-	for(i=0;i<=n;i++)
-	{
-		x=strlen(a[i]);
-	//	printf("所以，a[%d]\n%s会变成：\n",i,a[i]);
-		for(j=0;j<x;j++)
-		{
+		{	m=0;
+		 	x=strlen(a[i]);
+			 for(j=0;j<x;j++)
+			{
 			c=a[i][j];
 			if(c<65||c>90)
 				continue;
@@ -41,8 +30,15 @@ int main()
 			else 
 				a[i][j]=c-5;	
 		
-		}
+			}
 		printf("%s\n",a[i]);
+		}
+		if(m)
+		{n++;strcat(a[n],b);
+		}
+		if(!(strcmp(b,"ENDOFINPUT")))	
+			break;	
+		
 	}
 	return 0;
 }
