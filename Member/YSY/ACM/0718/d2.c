@@ -1,14 +1,12 @@
 #include<stdio.h>
 #include<string.h>
-int m;
 int main()
 {
-	int i,j,n,x;
-	char a[100][200];
-	char b[200];
+	int i,j,m,x=0;
+	char b[200],d[200];
 	char c;
 	m=0;
-	n=0;
+	strcpy(d,"\0");
 	for(i=0;i<=301;i++)
 	{
 		//scanf("%[^\n]",b);
@@ -17,24 +15,24 @@ int main()
 		{	m=1;continue;
 		}
 		else if(!(strcmp(b,"END")))	
-		{	m=0;
-		 	x=strlen(a[i]);
-			 for(j=0;j<x;j++)
+		{
+			for(j=0;j<x;j++)
 			{
-			c=a[i][j];
-			if(c<65||c>90)
+			c=d[j];
+			if(c<'A'||c>'Z')
 				continue;
-			
-			if(c<70)
-				a[i][j]=c+21;
+			if(c<'F')
+				d[j]=c+21;
 			else 
-				a[i][j]=c-5;	
-		
+				d[j]=c-5;	
 			}
-		printf("%s\n",a[i]);
+			printf("%s\n",d);
+			x=0;
+			m=0;
+			strcpy(d,"\0");
 		}
 		if(m)
-		{n++;strcat(a[n],b);
+		{x+=strlen(b);strcat(d,b);
 		}
 		if(!(strcmp(b,"ENDOFINPUT")))	
 			break;	
@@ -42,3 +40,4 @@ int main()
 	}
 	return 0;
 }
+
