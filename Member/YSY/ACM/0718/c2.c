@@ -20,7 +20,6 @@ int main()
 		if((a[i]<=i)&&(a[i]!=a[i-1]))
 		{
 			num++;
-			//xi=a[i];
 		}	
 	}
 
