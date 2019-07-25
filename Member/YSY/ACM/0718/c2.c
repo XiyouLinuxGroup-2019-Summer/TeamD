@@ -14,11 +14,11 @@ int main()
 	{	scanf("%d",&a[i]);	
 	}
 	qsort(a+1,n+1,sizeof(int),cmp); 
-	xi=0;
+//	xi=0;
 
 	for(i=1;i<=n;i++)
 	{
-		if(a[i]<=i&&xi!=a[i])
+		if(a[i]<=i&&a[i]!=a[i-1])
 		{
 			num++;
 			xi=a[i];
