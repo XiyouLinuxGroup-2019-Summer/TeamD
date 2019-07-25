@@ -23,7 +23,6 @@ void maya(void)
 	
 	ty=num/260;
 	num=num%260;
-//printf("%ld\n",num);
 
 	x=(num)%20;
 	if(x==0)
