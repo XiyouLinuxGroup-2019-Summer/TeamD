@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-	int n,i,sum,a[100];
+	int n,i,sum,a;
 	scanf("%d",&n);
 	
 	sum=0;
-	for(i=1;i<=n;i++)
-	{	scanf("%d",&a[i]);
-		sum+=a[i];	
+	while(scanf("%d",&a)!='\n')
+	{
+		sum+=a;	
 	}
 	
-	for(i=1;i<=n;i++)
+	for(i=1;i<n;i++)
 	{
 		sum-=(n+1-i);
 		if(sum<=0)
