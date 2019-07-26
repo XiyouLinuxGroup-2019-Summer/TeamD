@@ -14,7 +14,7 @@ int main()
 	{	scanf("%ld",&a[i]);	
 	}
 	qsort(a+1,n+1,sizeof(int),coomp); 
-printf("%d",a[1]);
+
 	for(i=1;i<=n;i++)
 	{
 		if(a[i]>=x){
