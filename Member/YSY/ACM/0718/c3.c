@@ -7,11 +7,11 @@ int coomp ( const void *a , const void *b )
 
 int main()
 { 
-	long i,n,num=0,x=1;
+	long long i,n,num=0,x=1;
 	scanf("%ld",&n);
 	int a[n+1];
 	for(i=1;i<=n;i++)
-	{	scanf("%ld",&a[i]);	
+	{	scanf("%lld",&a[i]);	
 	}
 	qsort(a+1,n+1,sizeof(int),coomp); 
 
@@ -23,7 +23,7 @@ int main()
 		}	
 	}
 
-	printf("%ld\n",num);
+	printf("%lld\n",num);
 
 	return 0;
 }
