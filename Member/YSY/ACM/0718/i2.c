@@ -5,7 +5,7 @@ void ship(void);
 void ship(void)
 {
 	char L[]="left",R[]="right";
-	int l,n,i,fnow=0,lnow,x=0;//船长、车数、变量、现在船在？、航行次数
+	int l,n,i,fnow=0,lnow,x=0;
 	int *car;
 	int *from;
 	char ch[10];
@@ -37,10 +37,9 @@ void ship(void)
 		x++;
 	printf("%d\n",x);
 
-	free(car);//释放第一维指针 
+	free(car);
 	free(from);
 }
-
 
 int main()
 {
@@ -49,6 +48,4 @@ int main()
 	for(i=0;i<n;i++)
 		ship();	
  	return 0;
-
-
 }
