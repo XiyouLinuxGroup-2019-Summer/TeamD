@@ -1,14 +1,16 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-void ship(void);
-void ship(void)
+void ship(int Nu);
+int x[256];
+void ship(int Nu)
 {
 	char L[]="left",R[]="right";
-	int l,n,i,fnow=0,lnow,x=0;
+	int l,n,i,fnow=0,lnow;
 	int *car;
 	int *from;
 	char ch[10];
+	x[Nu]=0;
 	scanf("%d %d",&l,&n);
 	l=l*100;
 	car=(int*)malloc(n*sizeof(int));
@@ -29,13 +31,12 @@ void ship(void)
 			i++;
 			continue;
 		}
-		x++;
-		fnow=x%2;
+		x[Nu]++;
+		fnow=x[Nu]%2;
 		lnow=l;
 	}
 	if(lnow!=l)
-		x++;
-	printf("%d\n",x);
+		x[Nu]++;
 
 	free(car);
 	free(from);
@@ -46,6 +47,9 @@ int main()
 	int i,n;
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
-		ship();	
+		ship(i);		
+	for(i=0;i<n;i++)
+		printf("%d\n",x[i]);
+
  	return 0;
 }
