@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<string.h>
 void maya(int Nu);
 char ha[19][10]={"pop","no","zip","zotz","tzec","xul","yoxkin","mol","chen","yax","zac","ceh", "mac","kankin","muan","pax","koyab","cumhu","uayet"};
@@ -19,8 +20,6 @@ void maya(int Nu)
 		i++;
 		x=strcmp(hm,ha[i]);	
 	}
-	
-
 	num=hy*365+i*20+hd+1;
 	
 	ty[Nu]=num/260;
@@ -33,7 +32,6 @@ void maya(int Nu)
 	td[Nu]=(num)%13;
 	if(td[Nu]==0)
 		td[Nu]=13;
-
 	return ;
 }
 
@@ -41,11 +39,11 @@ int main()
 {
 	int i,n;
 	scanf("%d",&n);
+	printf("%d",n);
 	for(i=0;i<n;i++)
 		maya(i);
 
 	for(i=0;i<n;i++)
 		printf("%ld %s %ld\n",td[i],tm[i],ty[i]);
-
 	return 0;
 }
