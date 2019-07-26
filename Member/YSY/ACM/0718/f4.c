@@ -6,15 +6,16 @@ char ha[19][10]={"pop","no","zip","zotz","tzec","xul","yoxkin","mol","chen","yax
 char tz[20][10]={"imix", "ik", "akbal", "kan", "chicchan", "cimi", "manik", "lamat", "muluk", "ok", "chuen", "eb", "ben", "ix", "mem", "cib", "caban", "eznab","canac", "ahau"};
 long ty[100],td[100];
 char tm[100][10];
+
+
 void maya(int Nu)
 {
 	char hm[10];
- 	ty[Nu]=0,td[Nu]=0;
-	long num=0;//t年，余下日数
+ 	long num=0;//t年，余下日数
 	int i=-1,x=1;
 	int hd,hy;
 	scanf("%d. %s %d",&hd,&hm,&hy);
-
+   	ty[Nu]=0,td[Nu]=0;
 	while(x)
 	{
 		i++;
