@@ -9,7 +9,7 @@ int acmp(const void *a,const void *b)
 int main()
 {
     long long int i,n,tmp=1,final=0;
-    int a[10000];
+    int a[200000];
     scanf("%lld",&n);
     for(i=0;i<n;i++)
     {
