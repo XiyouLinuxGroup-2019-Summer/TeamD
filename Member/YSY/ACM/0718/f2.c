@@ -32,6 +32,8 @@ void maya(void)
 	td=(num)%13;
 	if(td==0)
 		td=13;
+ 	if(num%260==0)
+		ty-=1;
 	printf("%ld %s %ld\n",td,tm,ty);
 
 
