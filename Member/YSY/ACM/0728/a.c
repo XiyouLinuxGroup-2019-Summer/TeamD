@@ -5,23 +5,21 @@ int main()
 	int m,n,i;
 	//int *a;
 	int a,b;
-	float x,min;
+	double x,min;
 
 	scanf("%d %d",&n,&m);
 	scanf("%d %d",&a,&b);
-	min=(float)a/b;
-//	printf("%d,%d,%f\n",a,b,min);
+	min=(double)a/b;
 
 	for(i=1;i<n;i++)
 	{
-//		scanf("%d %d",&a,&b);
-		x=(float)a/b;
+		x=(double)a/b;
 		if(min>x)
 			min=x;
 	
 			}
 	x=min*m;
-	printf("%.8f\n",x);
+	printf("%.8lf\n",x);
 
 
 
