@@ -7,11 +7,11 @@
 
 | 周一 | 周二 | 周三 | 周四 | 周五 | 周六 |
 |--|--|--|--|--|--|
-| 安装好mysql,能用c调动；|  测试题|继续完成测试题，理清聊天室思路，着手写  |  |  |  |
+| 安装好mysql,能用c调动；|  测试题|继续完成测试题；理清聊天室思路，着手写  |  |  |  |
 | |  |  |  |  |  |
 
 然后,学不动的时候就写写算法题，调节一下心情～w～
 
-MySQL 安装:https://blog.csdn.net/line256/article/details/82746166
+MySQL 安装:https://www.liaoxuefeng.com/wiki/1177760294764384/1179611020917408
 
 open的一凡 :https://blog.csdn.net/qq_44049351/article/details/98094113
