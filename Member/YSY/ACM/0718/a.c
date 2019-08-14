@@ -10,8 +10,9 @@ int acc(long long int x)
 		{	
 			x=x/j;
 			x*=j-1;
-			r++;			
-		}	
+//zhu		
+                    	r++;			
+		}
 		if(j==5)
 			j--;
 	}

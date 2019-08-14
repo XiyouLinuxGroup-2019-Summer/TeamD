@@ -1,13 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 typedef struct node
 {
     int day;
     int score;
 }homework;
-
-
 
 int cmp(const void *a,const void *b)
 {
@@ -37,7 +35,8 @@ int main()
 	}
 
         qsort(hw,n,sizeof(hw[0]),cmp);
-	int test[10000]={};
+	int test[1001];
+	memset(test,0,1001);
 
         
         for(i=0;i<n;i++)
